@@ -3,6 +3,8 @@ Documentation    Verifica se a aplicação está online
 
 Library          Browser
 
+Test Teardown   Take Screenshot
+
 *** Variables ***
 ${url}        http://localhost:3000
   

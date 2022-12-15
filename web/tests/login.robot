@@ -4,6 +4,8 @@ Documentation    Suite de testes de autenticação
 
 Resource        ../resources/base.resource
 
+Test Teardown   Take Screenshot
+
 *** Test Cases ***
 Login do Administrador
     Go To Login Page
@@ -11,7 +13,7 @@ Login do Administrador
     #Click                     xpath=//button[text()="Entrar no sistema"]
     #Click                     text=Entrar no sistema
     Submit Credentials              
-    User Should Be Logged In   Admin
+    User Should Be Loged In    Admin
 
 Email não cadastrado
     Go To Login Page

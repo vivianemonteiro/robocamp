@@ -2,7 +2,7 @@
 **** Settings ***
 Documentation        Keywords que representam a página de cadastro de matriculas
 
-Library        Browser
+#Library        Browser
 Library        libs/DateTricks.py
 
 *** Keywords ***
@@ -16,25 +16,25 @@ Select Student
     [Arguments]    ${student_name}
         
     Fill Text   xpath=//div[contains(text(), "nome do aluno")]/..//input
-    ...        ${student_name}
+    ...         ${student_name}
 
-    Click    css=div[class$=option] >> text=${student_name}
+    Click       css=div[class$=option] >> text=${student_name}
 
 Select Plan
     [Arguments]        ${plan_name}
 
-    Click    xpath=//label[text()="PLANO"]/..//div[contains(text(), "Selecione")]
+    Click       xpath=//label[text()="PLANO"]/..//div[contains(text(), "Selecione")]
 
-    Click    css=div[class$=option] >> text=${plan_name}
+    Click       css=div[class$=option] >> text=${plan_name}
 
 Fill Start Date
 
-    Focus    css=input[name=start_date]
+    Focus       css=input[name=start_date]
 
     ${start_date}        Get Start Date
     
-    FOR    ${number}    IN       @{start_date}
-        Keyboard Key    press    ${number}
+    FOR    ${number}       IN       @{start_date}
+           Keyboard Key    press    ${number}
     END
 
     # Sem o for e sem criar a função DateTrick teria que ser assim:
