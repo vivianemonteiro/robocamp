@@ -9,7 +9,7 @@ Projeto utilizado no Bootcamp de Robot Framework pela QAcademy
  Projetos Web e Mobile desenvolvidos de forma independente, assim como os testes não possuem dependências entre si.
  Criação de arquivos para execução multiplataformas
  
- As bibliotecas utilizadas foram: Browser e Appium
+ As principais bibliotecas utilizadas foram: Browser e Appium
  Massa de teste criada de acordo com os teste a ser executado
  
  Todos os testes possuem o "Take Screenshot" como Teardown
