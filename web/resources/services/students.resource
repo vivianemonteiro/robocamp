@@ -4,6 +4,7 @@ Documentation            Consumindo a rota students da API REST
 Library                  RequestsLibrary
 
 *** Variables ***
+#criei essa variável pois a url é a mesma para ambos os testes, então assim fica mais fácil dar manutenção no código.
 ${base_url}              http://localhost:3333/students
 
 *** Keywords ***

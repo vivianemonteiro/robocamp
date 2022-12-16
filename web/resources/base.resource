@@ -6,6 +6,7 @@ Resource        components/toast.resource
 Resource        components/notification.resource
 Resource        pages/login.resource
 Resource        pages/enroll.resource
+Resource        pages/help.resource
 
 Resource        services/sessions.resource
 Resource        services/students.resource

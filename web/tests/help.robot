@@ -8,19 +8,15 @@ Test Teardown   Take Screenshot
 
 *** Test Cases ***
 Deve Receber uma Notificação de Pedido de Ajuda 
-    
-    ${admin}                   Get Fixture                  admin
-    ${joao}                    Get Fixture                  joao
 
-    Reset Student              ${joao}[student][email]
-
-    ${token}                   Get Service Token            ${admin}
-    ${student_id}              POST New Student             ${token}        ${joao}[student]
+    Enviar uma Dúvida          joao
     
-    POST Question              ${student_id}                ${joao}[question]
-    
-    Do Login                   ${admin}
-    Open Notifications
-    Notification Should Be     ${joao}[question]
 
-    Take Screenshot
+#Desafio Final - Prazo: 20/12
+Deve Poder Responder o Pedido de Ajuda
+    
+    Enviar uma Dúvida         felicia
+    Responder uma Dúvida      felicia
+     
+
+   

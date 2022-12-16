@@ -1,0 +1,15 @@
+{
+    "student": {
+        "feet_tall": 1.65,
+        "weight": 65,
+        "age": 28,
+        "email": "felicia@hotmail.com.br",
+        "name": "Felicia Costa"
+    },
+    "enroll": {
+        "plan": "Smart"
+    },
+    "question": "Quais os melhores exercícios para fortalecimento do joelho?",
+    "answer": "Você precisa focar nos exercícios como legpress, cadeira extensora e flexora, procure o instrutor para mais informações."
+    
+}

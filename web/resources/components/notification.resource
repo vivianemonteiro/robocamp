@@ -10,7 +10,7 @@ Open Notifications
 Notification Should Be
     [Arguments]        ${text}
 
-    ${element}                 Set Variable    css=.scrollbar-container p
+    ${element}                 Set Variable    xpath=//p[contains(text(), "${text}")]
     Wait For Elements State    ${element}
     ...                        visible
     ...                        timeout=2

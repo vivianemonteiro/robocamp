@@ -2,7 +2,7 @@
 **** Settings ***
 Documentation        Keywords que representam a página de cadastro de matriculas
 
-#Library        Browser
+Library        Browser
 Library        libs/DateTricks.py
 
 *** Keywords ***
